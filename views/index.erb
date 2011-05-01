@@ -1,0 +1,25 @@
+<% if @user %>
+
+  <a href='/logout'>Logout</a><br />
+
+  <h3>Google URL Shortener</h3>
+  <ul>
+
+    <li>
+      <p>Paste your long URL here:</p>
+      <form action="/url/shorten" method="post">
+        <p><label for=long_url>Long URL</label><br>
+          <input id="long_url" name="long_url" size="30" type="text" value=""></p>
+        <p><input type="submit" value="Shorten"></p>
+      </form>
+    </li>
+
+    <li><a href='/url/history'>My History</a><br /></li>
+
+  </ul>
+
+<% else %>
+
+  <a href='/auth/google'>Sign in google</a><br />
+
+<% end %>

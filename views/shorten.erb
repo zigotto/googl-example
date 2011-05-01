@@ -1,0 +1,20 @@
+<p><a href="/">Home</a> | <a href="/url/history">My History</a></p>
+
+<h3><%= @url.short_url %> Details</h3>
+
+<p>
+  <strong>Long URL:</strong>
+  <%= @url.long_url %>
+</p>
+
+<p>
+  <strong>Short URL:</strong>
+  <%= @url.short_url %>
+</p>
+
+<p>
+  <strong>More info:</strong>
+  <%= @url.info %>
+</p>
+
+<img src="<%= @url.qr_code %>" />

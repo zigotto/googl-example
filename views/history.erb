@@ -1,0 +1,16 @@
+<a href='/'>Home</a><br />
+
+<h3>URLs shortened</h3>
+
+<table border="1">
+  <tr>
+    <th>Long URL</th>
+    <th>Short URL</th>
+  </tr>
+  <% @items.each do |item| %>
+    <tr>
+      <td><%= item.long_url %></td>
+      <td><%= item.label %></td>
+    </tr>
+  <% end %>
+</table>

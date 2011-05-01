@@ -1,0 +1,4 @@
+== Sample
+
+This app is running here.
+http://gooogl.heroku.com
